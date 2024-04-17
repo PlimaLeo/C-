@@ -1,0 +1,54 @@
+using System;
+
+class Program {
+  public static void Main (string[] args) {
+
+     // TELA DO CARDAPIO
+        Console.WriteLine( "bem vindo ao programa de laches");
+        Console.WriteLine( " ");
+          Console.WriteLine("COD    LANCHE                PREÇO");
+          Console.WriteLine("1      cachorro quente        4,00");
+          Console.WriteLine("2      x-salada               4,50");
+          Console.WriteLine("3      x-bacon                5,00");
+          Console.WriteLine("4      torrada simples        2,00");
+          Console.WriteLine("5      refrigerante           1,50");
+      Console.WriteLine( " ");
+    // INSERIR CODIGO DO LANCHE
+        Console.Write("Digite o codigo do seu lanche: ");
+        int cl1 = int.Parse(Console.ReadLine());
+        Console.WriteLine( " ");
+    // INSERIR QUANTIDADE DO LANCHE
+        Console.Write("Quantos lanches você deseja?: ");
+        int qcl1 = int.Parse(Console.ReadLine());
+        Console.WriteLine( " ");
+
+    // CALCULAR PEDIDO
+    if (cl1 == 1){
+      double pcl1 = qcl1 * 4.00;
+      Console.WriteLine(qcl1 +" cachorro quente, R$ " + pcl1 );
+      }
+      else if (cl1 == 2){
+        double pcl2 = qcl1 * 4.50;
+        Console.WriteLine(qcl1 +" x-salada, R$ " + pcl2);
+      }
+      else if (cl1 == 3){
+        double pcl3 = qcl1 * 5.00;
+        Console.WriteLine(qcl1 +" x-bacon, R$ " + pcl3);
+      }
+      else if (cl1 == 4){
+        double pcl4 = qcl1 * 2.00;
+        Console.WriteLine(qcl1 +" torrada simples, R$ " + pcl4);
+      }
+      else if (cl1 == 5){
+        double pcl5 = qcl1 * 1.50;
+        Console.WriteLine(qcl1 +" refrigerante, R$ " + pcl5);
+      }
+
+    else {
+      Console.WriteLine(" CODIGO INVALIDO");
+      }
+
+
+    
+  }
+}
